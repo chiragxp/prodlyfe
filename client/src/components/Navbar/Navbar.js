@@ -41,7 +41,7 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <Link to="/" className={classes.brandContainer}>
         <img component={Link} to="/" src={prodlyfeText} alt="icon" height="45px" />
-        <img component={donateLink} to={window.open(donateLink)} src={donate} alt="icon" height="45px"/>
+          {<img component={donateLink} to={window.open(donateLink)} src={donate} alt="icon" height="45px"/>}
       </Link>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
